@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<style>
+  #box-container {
+ 
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.315);
+    font-size: 25px;
+    width: 100%;
+  }
+  .tradingview-widget-container {
+       width: 100%;
+       height: 610px;
+  }
+  li{
+    display: inline;
+  }
+
+  #nav-container{
+    background-color: azure;
+    font-size: 20px;
+}
+    #tradingview_eed33{
+    height: 610px;
+  }
+    #tradingview_71db1{
+    height: 610px;
+  }
+
+  #tradingview_62a63{
+    height: 610px;
+  }
+</style>
+<nav id="nav-container"><ul>
+  <li><a href="tradingview.html">Macro</a></li>
+  <li >Currencies</li>
+  <li>Bonds</li>
+  <li>Commodities</li>
+  <li>Stocks</li>
+  <li><a href="crypto.html">Crypto</a></li>
+</ul></nav>
+
+<div id="box-container">
+
+    <div id="box-1">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div id="tradingview_eed33"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/ETHBTC/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">ETHBTC Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "autosize": true,
+            "symbol": "BINANCE:ETHBTC",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "withdateranges": true,
+            "range": "12M",
+            "hide_side_toolbar": false,
+            "allow_symbol_change": true,
+            "container_id": "tradingview_eed33"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END -->
+        </div>
+        
+        <div id="box-2"><!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div id="tradingview_71db1"></div>
+              <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CRYPTOCAP-TOTAL/" rel="noopener" target="_blank"><span class="blue-text">TOTAL Chart</span></a> by TradingView</div>
+              <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+              <script type="text/javascript">
+              new TradingView.widget(
+              {
+              "autosize": true,
+              "symbol": "CRYPTOCAP:TOTAL",
+              "timezone": "Etc/UTC",
+              "theme": "light",
+              "style": "1",
+              "locale": "en",
+              "toolbar_bg": "#f1f3f6",
+              "enable_publishing": false,
+              "withdateranges": true,
+              "range": "12M",
+              "hide_side_toolbar": false,
+              "allow_symbol_change": true,
+              "container_id": "tradingview_71db1"
+            }
+              );
+              </script>
+            </div>
+            <!-- TradingView Widget END --></div>
+
+            <div id="box-3"><!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                  <div id="tradingview_a658d"></div>
+                  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-XAUUSD/" rel="noopener" target="_blank"><span class="blue-text">XAUUSD Chart</span></a> by TradingView</div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                  <script type="text/javascript">
+                  new TradingView.widget(
+                  {
+                  "autosize": true,
+                  "symbol": "OANDA:XAUUSD",
+                  "timezone": "Etc/UTC",
+                  "theme": "light",
+                  "style": "1",
+                  "locale": "en",
+                  "toolbar_bg": "#f1f3f6",
+                  "enable_publishing": false,
+                  "withdateranges": true,
+                  "range": "12M",
+                  "hide_side_toolbar": false,
+                  "allow_symbol_change": true,
+                  "container_id": "tradingview_a658d"
+                }
+                  );
+                  </script>
+                </div>
+                <!-- TradingView Widget END -->
+        </div>
+</div>
+</html>
+
